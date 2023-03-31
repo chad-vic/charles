@@ -25,6 +25,7 @@ header {
     padding-top: 2rem;
     padding-bottom: 1.5rem;
     border-radius: 0px 0px 40px 40px;
+    margin-bottom: 8rem;
 }
 
 .voyage-main-box h1 {
@@ -49,6 +50,51 @@ header {
     background-size: cover;
     background-color: var(--dl-color-gray-300);
     border-radius: 50%;
+    display: none;
+}
+
+.voyage-destinations ul {
+    display: flex;
+    gap: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.galery {
+    display: flex;
+    gap: 1rem;
+}
+
+/* .section-1 img {
+    width: 450px;
+} */
+
+/* .section-1 {
+    flex: 0.4;
+}
+
+.section-2 {
+    flex: 0.6;
+} */
+
+.section-box, .grid-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.grid-box span {
+    display: block;
+    margin-bottom: 1rem;
+    line-height: 20px;
+    color: #555555;
+}
+
+.grid-box button {
+    font-weight: bold;
+    border-radius: 5px;
+    padding:0.7rem 1rem;
+    border: 2px solid #3348F6;
+    color: #3348F6;
+    background: none;
 }
 
 .voyage-footer {
@@ -59,13 +105,19 @@ header {
 
 .voyage-footer-nav {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 1.4rem;
 }
 
 .voyage-footer-nav ul {
     display: flex;
-    align-items: center;
-    gap:0 4rem;
+    flex-direction: column;
+    gap:1rem 0;
+}
+
+.voyage-footer-nav ul li {
+   font-size: 0.85em;
 }
 
 
@@ -84,6 +136,20 @@ header {
         display: flex;
         align-items: center;
         gap: 0 8rem;
+    }
+
+    .voyage-main-image {
+        display: block;
+    }
+
+    .voyage-footer-nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .voyage-footer-nav ul {
+        flex-direction: row;
+        gap:0 4rem;
     }
 }
 

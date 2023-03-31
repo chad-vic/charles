@@ -2,6 +2,7 @@ html, body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 16px;
   font-family: Inter;
 }
 
@@ -63,6 +64,12 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
 
 .button {
   color: var(--dl-color-gray-black);
