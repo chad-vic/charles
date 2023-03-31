@@ -1,160 +1,187 @@
 header {
-    background: var(--dl-color-gray-300);
-    padding-block: 0.5rem;
+	background: var(--dl-color-gray-300);
+	padding-block: 0.5rem;
 }
 
 .voyage-container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1100px;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1250px;
 }
 
 .voyage-nav ul {
-    display: flex;
-    gap: 1.3rem;
-    color: var(--dl-color-gray-black);
-    font-weight: 600;
+	display: flex;
+	gap: 1.3rem;
+	color: var(--dl-color-gray-black);
+	font-weight: 600;
 }
 
 .voyage-main {
-    background-image: url("../images/voyageMainbg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #EBEBFF;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
-    border-radius: 0px 0px 40px 40px;
-    margin-bottom: 8rem;
+	background-image: url("../images/voyageMainbg.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #ebebff;
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
+	border-radius: 0px 0px 40px 40px;
+	margin-bottom: 8rem;
 }
 
 .voyage-main-box h1 {
-    font-size: 2.9em;
-    margin-bottom: 0.7rem;
+	font-size: 3em;
+	margin-bottom: 0.7rem;
 }
 
 .voyage-main-box .small {
-    display: flex;
-    gap: 0.2rem;
+	display: flex;
+	gap: 0.2rem;
 }
 
 .voyage-main-box small {
-    margin-top: 0.25rem;
+	margin-top: 0.25rem;
 }
 
 .voyage-main-image {
-    width: 410px;
-    height: 410px;
-    background-image: url("../images/excited-young-woman.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--dl-color-gray-300);
-    border-radius: 50%;
-    display: none;
+	width: 410px;
+	height: 410px;
+	background-image: url("../images/excited-young-woman.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: var(--dl-color-gray-300);
+	border-radius: 50%;
+	display: none;
+}
+
+.voyage-destinations {
+	margin-bottom: 5rem;
 }
 
 .voyage-destinations ul {
-    display: flex;
-    gap: 1.4rem;
-    margin-bottom: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.4rem;
+	margin-bottom: 2rem;
+}
+
+/* play on this */
+@media only screen and (max-width: 992px) {
+	.voyage-destinations img {
+		width: 100%;
+	}
+	.section-box {
+		margin-bottom: 2rem;
+	}
 }
 
 .galery {
-    display: flex;
-    gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
-/* .section-1 img {
-    width: 450px;
-} */
-
-/* .section-1 {
-    flex: 0.4;
+.section-box,
+.grid-box {
+	display: flex;
+	gap: 1rem;
 }
 
+.grid-box,
 .section-2 {
-    flex: 0.6;
-} */
-
-.section-box, .grid-box {
-    display: flex;
-    gap: 1rem;
+	position: relative;
 }
 
 .grid-box span {
-    display: block;
-    margin-bottom: 1rem;
-    line-height: 20px;
-    color: #555555;
+	display: block;
+	line-height: 20px;
+	color: #555555;
 }
 
 .grid-box button {
-    font-weight: bold;
-    border-radius: 5px;
-    padding:0.7rem 1rem;
-    border: 2px solid #3348F6;
-    color: #3348F6;
-    background: none;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 0.2rem;
+	border: 2px solid #3348f6;
+	color: #3348f6;
+	background: none;
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 831px) {
+	.galery {
+		flex-direction: row;
+	}
+
+	.bottom {
+		position: absolute;
+		bottom: 0;
+	}
+
+	.grid-box button {
+		position: absolute;
+		bottom: 0;
+		padding: 0.6rem 0.9rem;
+		margin-bottom: 0.4rem;
+	}
 }
 
 .voyage-footer {
-    background:  #F9F9F9;
-    padding: 1.5rem 0;
-    margin-top: 1rem;
+	background: #f9f9f9;
+	padding: 1.5rem 0;
+	margin-top: 1rem;
 }
 
 .voyage-footer-nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1.4rem;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 1.4rem;
 }
 
 .voyage-footer-nav ul {
-    display: flex;
-    flex-direction: column;
-    gap:1rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem 0;
 }
 
 .voyage-footer-nav ul li {
-   font-size: 0.85em;
+	font-size: 0.85em;
 }
 
-
 @media only screen and (min-width: 805px) {
-    .voyage-nav {
-        display: flex;
-        gap: 0 2rem;
-        align-items: center;
-    }
+	.voyage-nav {
+		display: flex;
+		gap: 0 2rem;
+		align-items: center;
+	}
 
-    .voyage-nav ul {
-        gap: 3rem;
-    }
+	.voyage-nav ul {
+		gap: 3rem;
+	}
 
-    .voyage-main-box {
-        display: flex;
-        align-items: center;
-        gap: 0 8rem;
-    }
+	.voyage-main-box {
+		display: flex;
+		align-items: center;
+		gap: 0 8rem;
+	}
 
-    .voyage-main-image {
-        display: block;
-    }
+	.voyage-main-image {
+		display: block;
+	}
 
-    .voyage-footer-nav {
-        flex-direction: row;
-        align-items: center;
-    }
+	.voyage-footer-nav {
+		flex-direction: row;
+		align-items: center;
+	}
 
-    .voyage-footer-nav ul {
-        flex-direction: row;
-        gap:0 4rem;
-    }
+	.voyage-footer-nav ul {
+		flex-direction: row;
+		gap: 0 4rem;
+	}
 }
 
 @media only screen and (min-width: 900px) {
-    .voyage-nav {
-        gap: 0 20rem;
-    }
+	.voyage-nav {
+		gap: 0 20rem;
+	}
 }
