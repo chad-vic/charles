@@ -12,8 +12,12 @@ header {
 .voyage-nav ul {
 	display: flex;
 	gap: 1.3rem;
-	color: var(--dl-color-gray-black);
-	font-weight: 600;
+	color: var(--dl-color-gray-600);
+	font-weight: 500;
+}
+
+.voyage-nav ul a:hover {
+	color: black;
 }
 
 .voyage-main {
@@ -62,6 +66,16 @@ header {
 	flex-wrap: wrap;
 	gap: 1.4rem;
 	margin-bottom: 2rem;
+	color: var(--dl-color-gray-600);
+}
+
+.destination-active {
+	font-weight: 700;
+	font-size: large;
+}
+
+.voyage-destinations ul a:hover {
+	color: black;
 }
 
 /* play on this */
@@ -146,6 +160,10 @@ header {
 
 .voyage-footer-nav ul li {
 	font-size: 0.85em;
+}
+
+.voyage-footer-nav ul a:hover {
+	text-decoration: underline;
 }
 
 @media only screen and (min-width: 805px) {
